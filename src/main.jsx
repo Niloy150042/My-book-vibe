@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import Dashboard from './components/Dashboard/Dashboard';
 import Bookdetail from './components/Bookdetails/Bookdetail';
 import ListedBooks from './components/ListedBooks/ListedBooks';
+import PageGraph from './components/Graph/PageGraph';
 
 let router = createBrowserRouter([
   {
@@ -30,8 +31,14 @@ let router = createBrowserRouter([
     },
   {
     path:'/listed-books',
-    element:<ListedBooks></ListedBooks>
-  }]
+    element:<ListedBooks></ListedBooks>,
+    loader: ()=>fetch('/data.json')
+  },
+{
+  path:'/Pages-to-read',
+  element:<PageGraph></PageGraph>
+
+}]
   },
 ]);
 

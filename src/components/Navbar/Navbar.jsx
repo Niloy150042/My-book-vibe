@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
+import image from '../../assets/images/hand-book-logo-illustration-art-background-43965136.webp'
 const Navbar = () => {
   const links = < >
 
     <NavLink className={' font-semibold hover:text-green-600 hover:border-2  border-green-600 rounded p-1 '} to={'/'} > Home </NavLink>
     <NavLink className={'font-semibold hover:text-green-600 hover:border-2  border-green-600 rounded p-1'} to={'/listed-books'}> Listed Books </NavLink>
-    <NavLink className={'font-semibold hover:text-green-600 hover:border-2  border-green-600 rounded p-1'} to={'/listed-books'}> Pages to read </NavLink>
+    <NavLink className={'font-semibold hover:text-green-600 hover:border-2  border-green-600 rounded p-1'} to={'/pages-to-read'}> Pages to read </NavLink>
+    
 
   </>
   return (
@@ -22,7 +24,7 @@ const Navbar = () => {
         </div>
         <NavLink to={'/'}>
           <div className="flex items-center gap-2.5 font-bold text-xl">
-            <img className="w-10 h-10" src="/src/assets/images/hand-book-logo-illustration-art-background-43965136.webp" alt="" />
+            <img className="w-10 h-10" src={image} alt="" />
             <p>Book Vibe</p>
           </div>
 

@@ -13,8 +13,8 @@ const Book = ({ book }) => {
             </figure>
             <div className=" flex items-center mt-6 gap-4 justify-center">
                 {
-                    tags.map(tag => <div>
-                        <button className="btn btn-outline btn-accent">{tag}</button>
+                    tags.map((tag,idx) => <div>
+                        <button key={idx} className="btn btn-outline btn-accent">{tag}</button>
 
                     </div>)
                 }
@@ -27,7 +27,7 @@ const Book = ({ book }) => {
                 <p className="text-justify font-semibold ">{review}</p>
                <div className="flex  justify-center items-center">
                  <p className="font-bold ">{publisher}</p>
-                <a href=""> <FaRegStar className="text-[15px]" /></a>
+                 <FaRegStar className="text-[15px]" />
 
                </div>
             </div>

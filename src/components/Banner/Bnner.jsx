@@ -1,10 +1,11 @@
+import bannerimage from '../../assets/images/reading-book.jpg'
 const Bnner = () => {
     return (
         <div className="hero bg-gray-200 h-[500px]">
             <div className="flex flex-col md:flex-row-reverse justify-between  lg:flex-row-reverse items-center p-10">
                 <img
-                    src="/src/assets/images/reading-book.jpg"
-                    className="max-w-[500px] rounded-4xl shadow-2xl  "
+                   src={bannerimage}
+                    className="max-w-[500px] rounded-4xl shadow-2xl"
                 />
 
 

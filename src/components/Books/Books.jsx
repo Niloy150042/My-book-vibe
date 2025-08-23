@@ -13,7 +13,7 @@ const Books = () => {
             <div className="text-2xl text-center py-4 font-semibold "> ---- Books ---- </div>
              <div className="flex flex-wrap  justify-center items-center gap-10">
                 {
-                    books.map((book)=><Book book={book} key={book.id}></Book>)
+                    books.map((book)=><Book book={book} key={book.bookId}></Book>)
                 }
              </div>
         </div>
